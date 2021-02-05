@@ -2,8 +2,8 @@ This is a simple web project to display a simple pokedex games.
 
 ## Table of Contents
 
-- [Create Method](#updating-to-new-releases)
-- [Library]
+- [Create Method](#create-method)
+- [Library](#library)
 
 ## Create Method
 
