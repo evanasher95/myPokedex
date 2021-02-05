@@ -19,5 +19,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://evanasher95.github.io/myPokedex"
+  "homepage": "https://evanasher95.github.io/EvanPokedex"
 }
