@@ -8,7 +8,7 @@ class PokedexMainScreen extends Component {
                 <h4 className="card-title">Pokemon Information</h4>
                 <div className="card-body">
                     {
-                        this.props.pokemonName != '' ? 
+                        this.props.pokemonName !== '' ? 
                         <PokemonDetail pokemonName={this.props.pokemonName} catch={this.props.catch}/> 
                         : <p>Please select a pokemon to show the detail...</p>
                     }
