@@ -87,11 +87,21 @@ class Pokedex extends Component{
                 localStorage.setItem('myPokemons', JSON.stringify(myPokemons));
                 console.log(localStorage.getItem('myPokemons'));
 
-                const myPokemonsState = [...this.state.myPokemonList];
-                myPokemonsState.push(this.state.targetPokemon);
-                this.setState({
-                    myPokemonList: myPokemonsState
-                })
+                if(this.state.myPokemonList){
+                    const myPokemonsState = [...this.state.myPokemonList];
+                    myPokemonsState.push(this.state.targetPokemon);
+                    this.setState({
+                        myPokemonList: myPokemonsState
+                    })
+                }
+                else 
+                {
+                    const myPokemonsState = [];
+                    myPokemonsState.push(this.state.targetPokemon);
+                    this.setState({
+                        myPokemonList: myPokemonsState
+                    })
+                }
             }
         }
 
